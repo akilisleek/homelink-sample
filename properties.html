@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Properties | HomelinkGlobal</title>
+  <meta name="description" content="Search verified homes, apartments, land, commercial spaces, and relocation-ready properties.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand"><span class="brand-mark">HG</span><span>HomelinkGlobal</span></a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">Home</a><a href="properties.html">Properties</a><a href="index.html#services">Relocation</a><a href="admin.html">Admin concept</a>
+      </nav>
+      <div class="nav-actions">
+        <select data-currency aria-label="Select currency"><option>KES</option><option>USD</option><option>EUR</option><option>GBP</option></select>
+        <a class="btn ghost" href="admin.html">Admin</a>
+        <button class="menu-btn" data-menu>☰</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">Property marketplace</p>
+      <h1>Search verified listings across property and relocation needs.</h1>
+      <p>Filter by location, price, property type, rent or sale, and bedrooms. Each listing links to a dedicated property-detail journey.</p>
+    </div>
+  </section>
+
+  <main class="section">
+    <div class="container">
+      <form id="propertyFilters" class="search-panel" style="margin-top:0">
+        <div class="search-grid" style="grid-template-columns:repeat(4,1fr)">
+          <div class="field"><label for="location">Location</label><select id="location" name="location" data-location-options></select></div>
+          <div class="field"><label for="transaction">Rent or sale</label><select id="transaction" name="transaction"><option value="">Any</option><option>Rent</option><option>Sale</option></select></div>
+          <div class="field"><label for="type">Property type</label><select id="type" name="type"><option value="">Any</option><option>Apartment</option><option>House</option><option>Townhouse</option><option>Villa</option><option>Studio</option><option>Commercial</option><option>Land</option></select></div>
+          <div class="field"><label for="bedrooms">Bedrooms</label><select id="bedrooms" name="bedrooms"><option value="">Any</option><option value="1">1+</option><option value="2">2+</option><option value="3">3+</option><option value="4">4+</option><option value="5">5+</option></select></div>
+        </div>
+        <div class="filters-advanced">
+          <div class="field"><label for="minPrice">Min price KES</label><input id="minPrice" name="minPrice" type="number" min="0" placeholder="50000"></div>
+          <div class="field"><label for="maxPrice">Max price KES</label><input id="maxPrice" name="maxPrice" type="number" min="0" placeholder="300000"></div>
+          <div class="field"><label for="sort">Sort by</label><select id="sort"><option value="featured">Featured first</option><option value="price-low">Lowest price</option><option value="price-high">Highest price</option><option value="beds">Most bedrooms</option></select></div>
+          <button class="btn" type="submit">Apply filters</button>
+          <button class="btn ghost" type="button" id="resetFilters">Reset</button>
+        </div>
+      </form>
+
+      <div class="toolbar" style="margin-top:28px">
+        <div><p class="eyebrow">Results</p><h2 id="resultCount" style="font-size:1.8rem">Listings</h2></div>
+        <div id="activeChips" class="chips"></div>
+      </div>
+      <div id="propertiesGrid" class="property-grid"></div>
+    </div>
+  </main>
+
+  <footer class="footer"><div class="container footer-bottom"><span>© <span data-year></span> HomelinkGlobal prototype.</span><span><a href="admin.html">Open admin dashboard concept</a></span></div></footer>
+
+  <div id="inquiryModal" class="modal" aria-hidden="true">
+    <div class="modal-card">
+      <div class="modal-head"><h3 id="inquiryTitle">Request viewing</h3><button class="icon-btn" data-close-modal>×</button></div>
+      <form id="inquiryForm" class="form-grid">
+        <input type="hidden" id="inquiryPropertyId" name="propertyId">
+        <div class="field"><label>Name</label><input name="name" required placeholder="Your full name"></div>
+        <div class="field"><label>Email</label><input name="email" type="email" required placeholder="you@example.com"></div>
+        <div class="field"><label>Phone</label><input name="phone" placeholder="+254..."></div>
+        <div class="field"><label>Message</label><textarea name="message" rows="4" placeholder="Preferred viewing date or relocation needs"></textarea></div>
+        <button class="btn" type="submit">Submit inquiry</button>
+      </form>
+    </div>
+  </div>
+  <div id="toast" class="toast"></div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

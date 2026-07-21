@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin Dashboard Concept | HomelinkGlobal</title>
+  <meta name="description" content="Admin dashboard concept for property listings, users, inquiries, bookings, and service requests.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand"><span class="brand-mark">HG</span><span>HomelinkGlobal</span></a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">Home</a><a href="properties.html">Properties</a><a href="admin.html">Admin concept</a>
+      </nav>
+      <div class="nav-actions"><a class="btn ghost" href="properties.html">View marketplace</a><button class="menu-btn" data-menu>☰</button></div>
+    </div>
+  </header>
+
+  <main class="admin-shell">
+    <aside class="sidebar">
+      <a href="index.html" class="brand"><span class="brand-mark">HG</span><span>Operations</span></a>
+      <nav aria-label="Admin sections">
+        <button class="active" data-tab="overview">Overview</button>
+        <button data-tab="listings">Listings</button>
+        <button data-tab="inquiries">Inquiries</button>
+        <button data-tab="services">Service requests</button>
+        <button data-tab="suppliers">Supplier requests</button>
+        <button data-tab="users">Users</button>
+        <button data-tab="settings">Handover</button>
+      </nav>
+    </aside>
+
+    <section class="admin-main">
+      <div data-panel="overview" class="tab-panel active">
+        <p class="eyebrow">Admin dashboard concept</p>
+        <h1 style="font-size:clamp(2rem,4vw,3.4rem)">Internal operations workspace</h1>
+        <p class="muted" style="margin-top:12px;max-width:820px">This dashboard demonstrates how HomelinkGlobal could manage listings, inquiries, bookings, users, and relocation-service requests from one secure administrative area.</p>
+        <div id="statGrid" class="stat-grid"></div>
+        <div class="admin-grid">
+          <article class="panel">
+            <h3>Operations flow</h3>
+            <div class="feature-list">
+              <div class="feature-item"><span class="tick">1</span><span>Agent or owner submits a property listing for review.</span></div>
+              <div class="feature-item"><span class="tick">2</span><span>Internal team verifies details, media, pricing, ownership status, and location.</span></div>
+              <div class="feature-item"><span class="tick">3</span><span>Verified property becomes visible in the marketplace and can receive inquiries.</span></div>
+              <div class="feature-item"><span class="tick">4</span><span>Customer inquiries are assigned to an agent, viewing is scheduled, and follow-up status is tracked.</span></div>
+            </div>
+          </article>
+          <article class="panel">
+            <h3>Production modules</h3>
+            <p class="muted" style="margin-top:10px">Recommended full version modules include authentication, roles and permissions, property CRUD, media uploads, inquiry CRM, booking calendar, service providers, payments, country configuration, analytics, and audit logs.</p>
+          </article>
+        </div>
+      </div>
+
+      <div data-panel="listings" class="tab-panel">
+        <div class="section-header"><div><p class="eyebrow">Listings management</p><h2>Property records</h2></div></div>
+        <div class="panel table-wrap">
+          <table>
+            <thead><tr><th>Property</th><th>Type</th><th>Mode</th><th>Beds</th><th>Price</th><th>Status</th><th>Action</th></tr></thead>
+            <tbody id="listingsTable"></tbody>
+          </table>
+        </div>
+        <article class="panel" style="margin-top:20px">
+          <h3>Add listing concept</h3>
+          <form id="listingConceptForm" class="filters-advanced">
+            <div class="field"><label>Title</label><input required placeholder="Property title"></div>
+            <div class="field"><label>Location</label><input required placeholder="City / area"></div>
+            <div class="field"><label>Price</label><input required type="number" placeholder="KES"></div>
+            <div class="field"><label>Type</label><select><option>Apartment</option><option>House</option><option>Commercial</option><option>Land</option></select></div>
+            <button class="btn" type="submit">Capture concept</button>
+          </form>
+          <div id="listingConceptResult"></div>
+        </article>
+      </div>
+
+      <div data-panel="inquiries" class="tab-panel">
+        <div class="section-header"><div><p class="eyebrow">Customer inquiries</p><h2>Viewing requests and leads</h2></div><a class="btn ghost" href="properties.html">Submit test inquiry</a></div>
+        <div class="panel table-wrap">
+          <table>
+            <thead><tr><th>Customer</th><th>Phone</th><th>Property</th><th>Message</th><th>Created</th><th>Status</th></tr></thead>
+            <tbody id="inquiriesTable"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div data-panel="services" class="tab-panel">
+        <div class="section-header"><div><p class="eyebrow">Relocation operations</p><h2>Service requests</h2></div><a class="btn ghost" href="index.html#services">Submit test service</a></div>
+        <div class="panel table-wrap">
+          <table>
+            <thead><tr><th>ID</th><th>Service</th><th>Location</th><th>Client type</th><th>Status</th></tr></thead>
+            <tbody id="serviceTable"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div data-panel="suppliers" class="tab-panel">
+        <div class="section-header"><div><p class="eyebrow">Supplier onboarding</p><h2>Owner, agent, developer, and provider requests</h2></div><a class="btn ghost" href="index.html#list-property">Open supplier journey</a></div>
+        <div class="panel table-wrap">
+          <table>
+            <thead><tr><th>ID</th><th>Supplier type</th><th>Title</th><th>Location</th><th>Price / estimate</th><th>Status</th></tr></thead>
+            <tbody id="supplierRequestsTable"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div data-panel="users" class="tab-panel">
+        <p class="eyebrow">User management concept</p>
+        <h2>Roles and access</h2>
+        <div class="stat-grid">
+          <article class="proposal-card"><h3>Seekers</h3><p class="muted">Can save properties, submit inquiries, request relocation services, and track bookings.</p></article>
+          <article class="proposal-card"><h3>Owners and agents</h3><p class="muted">Can submit listings, upload media, respond to assigned leads, and update property availability.</p></article>
+          <article class="proposal-card"><h3>Internal team</h3><p class="muted">Can verify listings, manage users, assign inquiries, and review service requests.</p></article>
+          <article class="proposal-card"><h3>Super admin</h3><p class="muted">Controls countries, currencies, roles, platform settings, audit logs, and integrations.</p></article>
+        </div>
+      </div>
+
+      <div data-panel="settings" class="tab-panel">
+        <p class="eyebrow">Ownership and handover concept</p>
+        <h2>Professional handover readiness</h2>
+        <div class="feature-list">
+          <div class="feature-item"><span class="tick">✓</span><span>Source code should be delivered through a private GitHub repository owned by the client or agreed owner.</span></div>
+          <div class="feature-item"><span class="tick">✓</span><span>Production credentials must be stored securely and never hard-coded into source files.</span></div>
+          <div class="feature-item"><span class="tick">✓</span><span>Documentation should include setup, deployment, database structure, admin use, and maintenance instructions.</span></div>
+          <div class="feature-item"><span class="tick">✓</span><span>Future handover should include source code, database access, hosting access, environment variables, and integration accounts.</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>

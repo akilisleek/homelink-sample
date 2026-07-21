@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Property Details | HomelinkGlobal</title>
+  <meta name="description" content="Property detail page with images, amenities, description, agent contact, and inquiry request workflow.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand"><span class="brand-mark">HG</span><span>HomelinkGlobal</span></a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">Home</a><a href="properties.html">Properties</a><a href="index.html#services">Relocation</a><a href="admin.html">Admin concept</a>
+      </nav>
+      <div class="nav-actions">
+        <select data-currency aria-label="Select currency"><option>KES</option><option>USD</option><option>EUR</option><option>GBP</option></select>
+        <a class="btn ghost" href="properties.html">Back to search</a>
+        <button class="menu-btn" data-menu>☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="propertyDetail" class="section"></main>
+
+  <section class="section soft">
+    <div class="container">
+      <div class="section-header">
+        <div><p class="eyebrow">Related listings</p><h2>More properties to compare</h2></div>
+        <a class="btn ghost" href="properties.html">Browse all</a>
+      </div>
+      <div id="relatedProperties" class="property-grid"></div>
+    </div>
+  </section>
+
+  <footer class="footer"><div class="container footer-bottom"><span>© <span data-year></span> HomelinkGlobal prototype.</span><span>Property search, details and inquiry workflow.</span></div></footer>
+
+  <div id="inquiryModal" class="modal" aria-hidden="true">
+    <div class="modal-card">
+      <div class="modal-head"><h3 id="inquiryTitle">Request viewing</h3><button class="icon-btn" data-close-modal>×</button></div>
+      <form id="inquiryForm" class="form-grid">
+        <input type="hidden" id="inquiryPropertyId" name="propertyId">
+        <div class="field"><label>Name</label><input name="name" required placeholder="Your full name"></div>
+        <div class="field"><label>Email</label><input name="email" type="email" required placeholder="you@example.com"></div>
+        <div class="field"><label>Phone</label><input name="phone" placeholder="+254..."></div>
+        <div class="field"><label>Message</label><textarea name="message" rows="4" placeholder="Preferred viewing date or relocation needs"></textarea></div>
+        <button class="btn" type="submit">Submit inquiry</button>
+      </form>
+    </div>
+  </div>
+  <div id="toast" class="toast"></div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

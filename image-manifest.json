@@ -1,0 +1,86 @@
+[
+  {
+    "filename": "hero-kitchen-dining.jpg",
+    "title": "Bright open-plan kitchen and dining",
+    "use": "Homepage hero / premium apartment detail gallery",
+    "url": "https://images.unsplash.com/photo-1745794621090-d856c53b0cc2?auto=format&fit=crop&fm=jpg&q=80&w=1800"
+  },
+  {
+    "filename": "family-home-exterior.jpg",
+    "title": "Clean family home exterior",
+    "use": "Family home listing card",
+    "url": "https://images.unsplash.com/photo-1605146769289-440113cc3d00?auto=format&fit=crop&fm=jpg&q=80&w=1800"
+  },
+  {
+    "filename": "penthouse-living.jpg",
+    "title": "Bright penthouse living room",
+    "use": "Penthouse listing / detail page gallery",
+    "url": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&fm=jpg&q=80&w=1800"
+  },
+  {
+    "filename": "suburban-villa-exterior.jpg",
+    "title": "Suburban villa exterior",
+    "use": "Villa/property card",
+    "url": "https://images.unsplash.com/photo-1592595896551-12b371d546d5?auto=format&fit=crop&fm=jpg&q=80&w=1800"
+  },
+  {
+    "filename": "city-apartments.jpg",
+    "title": "Modern city apartment towers",
+    "use": "Westlands/Kilimani city apartment listing",
+    "url": "https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&fit=crop&fm=jpg&q=80&w=1800"
+  },
+  {
+    "filename": "colorful-townhouses.jpg",
+    "title": "Modern townhouse row",
+    "use": "Townhouse/development listing",
+    "url": "https://images.unsplash.com/photo-1748228885250-49564b614db9?auto=format&fit=crop&fm=jpg&q=80&w=1800"
+  },
+  {
+    "filename": "business-towers.jpg",
+    "title": "Commercial high-rise buildings",
+    "use": "Corporate relocation / commercial property section",
+    "url": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&fm=jpg&q=80&w=1800"
+  },
+  {
+    "filename": "modern-living-dining.jpg",
+    "title": "Modern living and dining interior",
+    "use": "Serviced apartment listing / gallery",
+    "url": "https://images.unsplash.com/photo-1593696140826-c58b021acf8b?auto=format&fit=crop&fm=jpg&q=80&w=1800"
+  },
+  {
+    "filename": "marble-kitchen.jpg",
+    "title": "Large white marble kitchen",
+    "use": "Kitchen gallery / premium house listing",
+    "url": "https://images.unsplash.com/photo-1682888813913-e13f18692019?auto=format&fit=crop&fm=jpg&q=80&w=1800"
+  },
+  {
+    "filename": "master-bedroom.jpg",
+    "title": "Clean master bedroom",
+    "use": "Bedroom gallery / property detail page",
+    "url": "https://images.unsplash.com/photo-1635108197330-2f82e7f69111?auto=format&fit=crop&fm=jpg&q=80&w=1800"
+  },
+  {
+    "filename": "white-bedroom.jpg",
+    "title": "White bedroom with chair",
+    "use": "Second bedroom gallery image",
+    "url": "https://images.unsplash.com/photo-1635108197047-add19c9ae680?auto=format&fit=crop&fm=jpg&q=80&w=1800"
+  },
+  {
+    "filename": "glass-bathroom.jpg",
+    "title": "Modern glass bathroom",
+    "use": "Bathroom gallery image",
+    "url": "https://images.unsplash.com/photo-1722153148989-eb70d4ca7dcc?auto=format&fit=crop&fm=jpg&q=80&w=1800"
+  },
+  {
+    "filename": "bathtub-bathroom.jpg",
+    "title": "Bright bathtub bathroom",
+    "use": "Luxury bathroom gallery",
+    "url": "https://images.unsplash.com/photo-1609280069865-62f178e2c237?auto=format&fit=crop&fm=jpg&q=80&w=1800"
+  },
+  {
+    "filename": "double-sink-bathroom.jpg",
+    "title": "Clean double-sink bathroom",
+    "use": "Bathroom detail gallery",
+    "url": "https://images.unsplash.com/photo-1722650272383-e46539e9793a?auto=format&fit=crop&fm=jpg&q=80&w=1600"
+  }
+]
